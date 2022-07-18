@@ -19,13 +19,12 @@ public class ConexionBD {
           * NBMFiscales, que existe en SQL Server.
           */
         String strConexionBD = "jdbc:sqlserver://localhost:1433;databaseName=lider;databaseName=lider;user=sa;password=Flowing2022@";
-        System.out.println( strConexionBD );
         Connection conn = null;
 
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(strConexionBD);
-            System.out.println("OK! Conexion establecida.");
+            System.out.println("OK! Conexion a BD lider establecida.");
         } catch (ClassNotFoundException | SQLException e) {
             System.err.println("Ojo! Error al conectarse a BD lider. " + e);
         }

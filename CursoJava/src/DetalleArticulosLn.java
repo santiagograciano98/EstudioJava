@@ -45,6 +45,13 @@ public class DetalleArticulosLn {
     public void setCantidad(float cantidad) {
         this.cantidad = cantidad;
     }
+
+    @Override
+    public String toString() {
+        return "DetalleArticulosLn{" + "articuloCodigo=" + articuloCodigo + ", componenteCodigo=" + componenteCodigo + ", cantidad=" + cantidad + '}';
+    }
+    
+    
     
     
 }
